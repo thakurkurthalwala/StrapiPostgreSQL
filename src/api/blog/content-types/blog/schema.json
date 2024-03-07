@@ -4,7 +4,7 @@
   "info": {
     "singularName": "blog",
     "pluralName": "blogs",
-    "displayName": "Blog",
+    "displayName": "Blogs",
     "description": ""
   },
   "options": {
@@ -12,23 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string",
-      "required": true
-    },
-    "Preview_Image": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
+    "Media": {
       "allowedTypes": [
         "images",
         "files",
-        "videos"
-      ]
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     },
     "Content": {
-      "type": "richtext",
-      "required": true
+      "type": "richtext"
     }
   }
 }
